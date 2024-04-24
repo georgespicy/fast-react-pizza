@@ -1,7 +1,6 @@
 import { createSlice } from "@reduxjs/toolkit";
 import { getAddress } from "../../services/apiGeocoding";
 
-/*
 function getPosition() {
   return new Promise(function (resolve, reject) {
     navigator.geolocation.getCurrentPosition(resolve, reject);
@@ -24,7 +23,6 @@ async function fetchAddress() {
   return { position, address };
 }
 
-*/
 const initialState = {
   username: "",
 };
@@ -41,4 +39,4 @@ const userSlice = createSlice({
 
 export const { updateName } = userSlice.actions;
 
-export default userSlice.reducer; 
+export default userSlice.reducer;
